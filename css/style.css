@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#main-bg{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg1.png);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding-top: 2%;
+    position: relative;
+    z-index: 10;
+    
+}
+.logo{
+    width: 80px;
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.nav img{
+    width: 44px;
+    cursor: pointer;
+}
+
+button{
+    padding: 7px 14px;
+    border-radius: 23px;
+    border: 2px solid #fff;
+    margin: 0px 23px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    
+}
+button:hover{
+    transition: 0.3s;
+    box-shadow: 0 0 10px 0;
+}
+.container{
+    width:100%;
+    height: 100vh;
+    background: rgba(86,86,86,0.3);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    left:0;
+    top:0;   
+}
+.container-mid{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 15%;
+    color: white;
+}
+
+.container-mid h2{
+    font-size: 70px;
+    letter-spacing: 10px;
+}
+.container-mid p{
+    font-size: 25px;
+}
+
+.container-mid p{
+    font-size: 13px;
+    margin-top: 20px;
+    
+}
+.container-mid input{
+    width: 50%;
+    padding: 8px 10px;
+    outline: none;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 23px;
+    color: white;
+    margin-top:3%;
+}
+
+::placeholder{
+    color: #ccc;
+}
+.slider{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    right: 30px;
+    bottom: 50px;
+    width: 80%;
+    padding-left: 9.2%;
+    margin: auto;
+}
+
+#left-arrow, #right-arrow{
+    width: 45px;
+    cursor: pointer;
+}
+
+.preview img{
+    width: 75px;
+    margin: 0 15px;
+    opacity: 0.4;
+}
+.preview .active{
+    display: inline-block;
+    border: 3px solid #fff;
+    width: 100px;
+    opacity: 1;   
+}
